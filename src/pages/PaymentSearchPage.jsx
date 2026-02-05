@@ -35,10 +35,9 @@ const PaymentSearchPage = () => {
     }
   }, [searchPayments, rowsPerPage, orderBy, order]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     handleSearch({});
-  }, []);
+  }, [handleSearch]);
 
   const handleClear = () => {
     handleSearch({});
